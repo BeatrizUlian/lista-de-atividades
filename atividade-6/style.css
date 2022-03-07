@@ -10,10 +10,6 @@ p {
 }
 
 
-ul {
-  list-style: none;
-}
-
 body {
   background: #fffbf0;
   color: #222;
@@ -25,32 +21,6 @@ body {
     margin-top: 30px;
 }
 
-ul {
-    padding: 10px;
-    margin: 10px;   
-  }
-  li a {
-    display: block;
-    padding: 10px;
-    margin-right: 10px;
-    color: #20592f;
-    text-decoration: none;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: bold;
-    text-transform: lowercase;
-    font-size: 1.125rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 10px;
-  }
-  
-li a:hover {
-    background-color: white;
-    border-left: 3px solid #222;
-  width: 22%;
-  color: #816d39;
-
-
-  }
   
   
 
@@ -65,12 +35,6 @@ h1 {
     width: 60%;
   }
   
-h2{
-    font-size: 16px;
-    color: #222;
-    font-family: "IBM Plex Mono";
-    text-transform: lowercase;
-    text-align: right;
-    width: 60%;
-    letter-spacing: 0.1em;
+p {
+    margin-top: 20px;
 }
