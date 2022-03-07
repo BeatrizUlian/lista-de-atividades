@@ -10,6 +10,9 @@ p {
 }
 
 
+ul {
+    list-style: none;
+  }
 body {
   background: #fffbf0;
   color: #222;
@@ -62,7 +65,7 @@ h1 {
     width: 60%;
   }
   
-p {
+.main p {
     margin-top: 20px;
     letter-spacing: 0.1em;
     font-family: "IBM Plex Mono", monospace;
