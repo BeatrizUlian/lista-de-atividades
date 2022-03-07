@@ -83,7 +83,11 @@ h1 {
       li a {   
         font-size: 1rem;
         
-    
+      }
+      li a:hover {
+       
+      width: 100%;
+      
       }
       
     .main {

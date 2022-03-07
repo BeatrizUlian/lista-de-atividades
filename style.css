@@ -89,6 +89,11 @@ h2{
     
 
   }
+  li a:hover {
+       
+    width: 100%;
+    
+    }
   
 .main {
     width: 80%;
