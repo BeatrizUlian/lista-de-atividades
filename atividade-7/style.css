@@ -1,0 +1,68 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  background: #fffbf0;
+  color: #222;
+
+}
+.main {
+    width: 50%;
+    margin:auto;
+    margin-top: 30px;
+}
+
+  
+  
+ul {
+    padding: 10px;
+    margin: 10px;   
+  }
+  li a {
+    display: block;
+    padding: 10px;
+    margin-right: 10px;
+    color: #20592f;
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+  
+li a:hover {
+    background-color: white;
+    border-left: 3px solid #222;
+  width: 22%;
+  color: #816d39;
+
+
+  }
+  
+
+h1 {
+    font-family: "Josefin Slab", Bitter, georgia;
+    font-size: 3rem;
+    font-weight: normal;
+  text-decoration: none;
+    color: #816d39;
+    text-align: left;
+    border-bottom: 1px solid #222;
+    width: 60%;
+  }
+  
+p {
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+}
