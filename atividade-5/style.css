@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background: url("https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80");
+font-family: georgia;
+}
+
+* {
+    box-sizing: border-box;
+  }
+header{
+    background-color: black;
+    height:  50px;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px;
+    opacity: 80%;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    height: 50px;
+    opacity: 90%;
+}
+
+address {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+
+}
+main{
+    height: 300px;
+}
+
+#quadrado1 {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    background: linear-gradient(90deg,rgb(0, 0, 0), rgb(152, 159, 226));
+    animation-name: animacao1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+#quadrado2{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(180deg,rgb(189, 177, 113),rgb(156, 60, 60));
+    animation-name: animacao2;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    position: absolute;
+}
+
+#quadrado3{
+    width: 200px;
+    height: 200px;
+    top: 700px;
+    margin-top: 300px;
+    background-color: rgb(102, 44, 58);
+    transition: all 2s linear;
+  
+}
+
+#quadrado3:hover{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        transition: 2s;
+        cursor:crosshair;
+        background-color:rgb(88, 83, 83);
+    
+}
+
+@keyframes animacao1 {
+    0% {top:100px; left: 0px;}
+    50% {top:100px; left: 1000px;}
+    100% {top:100px; left: 0px;}
+}
+
+@keyframes animacao2 {
+    0% { top:450px; left: 800px;}
+    50% {top:100px; left: 800px;}
+    100% {top:450px; left: 800px;}
+   
+}

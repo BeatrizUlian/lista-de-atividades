@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+#sub{
+    font-size: 14px;
+    margin-top: 0px;
+}
+.texto{
+    margin: 15px;
+}
+#texto{
+    text-indent: 30px;
+}
+#verde{
+    background-color: greenyellow;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#rosa {
+    background-color: magenta;
+}
+
+#imagem {
+    width: 420px;
+    height: 350px;
+    margin: 10px 100px  10px 100px;
+}
+.imagem {
+    font-size: 8.5px;
+  
+}
+.imagem p{
+    margin: 10px 100px  10px 100px;
+}
+
+.info{
+    margin: 15px;
+}

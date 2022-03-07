@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <meta charset="UTF-8">
+         <title>Formulário</title>
+         <link rel="stylesheet" href="style.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Nunito&family=Open+Sans&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <h1>Envie seu currículo</h1>
+
+ 
+
+<div class="formulario">
+  <form action="pagina/login.html" method="GET">
+      <fieldset>
+          <legend>Dados Pessoais</legend>
+      <label for="nomeCompleto">Nome Completo<span id="destaque">*</span> </label>
+      <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Insira seu nome" required maxLength="100">
+ 
+
+    <label for="email">Email<span id="destaque">*</span></label>
+    <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+
+    <label for="cel">Celular<span id="destaque">*</span></label>
+    <input type="number" name="cel" id="cel" placeholder="(xx) xxxx-xxxx" required>
+
+    <label for="endereco">Endereço</label>
+    <input type="text" name="endereco" id="endereco" placeholder="Insira seu endereço">
+
+    
+    <label for="cep">Cep</label>
+    <input type="text" name="cep" id="cep" placeholder="xxxxx-xxx" maxlength="9"/>
+
+
+    <label for="Datanascimento">Data de Nascimento</label>
+    <input type="date" name="Datanascimento" id="Datanascimento" required min="2004-01-01" required max="2022-01-01">
+
+    </fieldset>
+
+    <fieldset>
+    <legend>Dados Escolares</legend>
+    <label for="nomeCurso1">Nome do Curso 1<span id="destaque">*</span> </label>
+    <input type="text" name="nomeCurso1" id="nomeCurso1"  required>
+
+
+  <label for="horas1">Horas<span id="destaque">*</span></label>
+  <input type="number" name="horas1" id="horas1" required>
+
+  <label for="mesAno1">Mês/Ano de conclusão<span id="destaque">*</span></label>
+  <input type="month" name="mesAno1" id="mesAno1"  required min="2015-02">
+  <br><br><br>
+  <label for="nomeCurso2">Nome do Curso 2<span id="destaque">*</span> </label>
+  <input type="text" name="nomeCurso2" id="nomeCurso2"  required>
+
+
+<label for="horas2">Horas<span id="destaque">*</span></label>
+<input type="number" name="horas2" id="horas2" required>
+
+<label for="mesAno2">Mês/Ano de conclusão<span id="destaque">*</span></label>
+<input type="month" name="mesAno2" id="mesAno2"  required min="2015-02">
+<br><br><br>
+<label for="nomeCurso3">Nome do Curso 3<span id="destaque">*</span> </label>
+  <input type="text" name="nomeCurso3" id="nomeCurso3"  required>
+
+
+<label for="horas3">Horas<span id="destaque">*</span></label>
+<input type="number" name="horas3" id="horas3" required>
+
+<label for="mesAno3">Mês/Ano de conclusão<span id="destaque">*</span></label>
+<input type="month" name="mesAno3" id="mesAno3"  required min="2015-02"> 
+
+
+  </fieldset>
+
+  <fieldset>
+      <legend>Dados Profissionais</legend>
+
+      <label for="nomeEmpresa1">Nome da Empresa 1<span id="destaque">*</span> </label>
+      <input type="text" name="nomeEmpresa1" id="nomeEmpresa1"  required>
+
+      <label for="atual1">Atual? <span id="destaque">*</span></label>
+      <select name="atual1" id="atual1" required>
+        <option>Não</option>
+        <option selected>Sim</option>
+  
+      </select>
+
+      <label for="tempoTrabalho1">Tempo de Trabalho<span id="destaque">*</span></label>
+      <input type="number" name="tempoTrabalho1" id="tempoTrabalho1" required>
+
+      <label for="cargo1">Cargo:</label>
+      <input type="text" name="cargo1" id="cargo1">
+
+      <label for="descricaoAtividades1">Descrição das atividades</label>
+      <textarea name="descricaoAtividades1" id="descricaoAtividades1" placeholder="Descreva as atividades realizadas"></textarea>
+      <br><br><br>
+      <label for="nomeEmpresa2">Nome da Empresa 2<span id="destaque">*</span></label>
+      <input type="text" name="nomeEmpresa2" id="nomeEmpresa2"  required>
+
+      <label for="atual2">Atual?<span id="destaque">*</span></label>
+      <select name="atual2" id="atual2" required>
+        <option>Não</option>
+        <option selected>Sim</option>
+  
+      </select>
+
+      <label for="tempoTrabalho2">Tempo de Trabalho<span id="destaque">*</span></label>
+      <input type="number" name="tempoTrabalho2" id="tempoTrabalho2" required>
+
+      <label for="cargo2">Cargo:</label>
+      <input type="text" name="cargo2" id="cargo2">
+
+      <label for="descricaoAtividades2">Descrição das atividades</label>
+      <textarea name="descricaoAtividades2" id="descricaoAtividades2" placeholder="Descreva as atividades realizadas"></textarea>
+      <br><br><br>
+
+      
+      <label for="nomeEmpresa3">Nome da Empresa 3<span id="destaque">*</span> </label>
+      <input type="text" name="nomeEmpresa3" id="nomeEmpresa3"  required>
+    
+      <label for="atual3">Atual?<span id="destaque">*</span></label>
+      <select name="atual3" id="atual3" required>
+        <option>Não</option>
+        <option selected>Sim</option>
+  
+      </select>
+
+      <label for="tempoTrabalho3">Tempo de Trabalho<span id="destaque">*</span></label>
+      <input type="number" name="tempoTrabalho13" id="tempoTrabalho3" required>
+
+      <label for="cargo3">Cargo:</label>
+      <input type="text" name="cargo3" id="cargo3">
+
+      <label for="descricaoAtividades3">Descrição das atividades</label>
+      <textarea name="descricaoAtividades3" id="descricaoAtividades3" placeholder="Descreva as atividades realizadas"></textarea>
+
+    
+  </fieldset>
+
+  <label for="check">
+  <input type="checkbox"  id="check">
+  Autorizo o uso dos dados apresentados nesse formulário.</label>
+  <div class="botao">
+  <button>Salvar</button>
+  </div>
+  </form>
+</div>
+
+</body>
+
+</html>
