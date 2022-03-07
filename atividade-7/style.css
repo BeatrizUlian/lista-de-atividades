@@ -70,3 +70,26 @@ h1 {
     letter-spacing: 0.1em;
     font-family: "IBM Plex Mono", monospace;
 }
+
+@media (max-width: 450px){
+    
+    h1 {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+    h2{
+        width: 100%;
+    }
+      li a {   
+        font-size: 1rem;
+        
+    
+      }
+      
+    .main {
+        width: 80%;
+        margin:auto;
+        margin-top: 30px;
+    
+    }
+    }
