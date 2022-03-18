@@ -34,7 +34,7 @@
                 <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1006"
                     target="_blank">detalhar</a></span></h1> 
 
-            <p id="">Resultado: A média das 3 notas foi <span id="resultado">xx</span>.</p>
+            <p id="">Resultado: A média das 3 notas foi <span id="resultado" class="result">xx</span>.</p>
             <div class="centro">
             <label for="">Nota 01:</label>
             <input type="number" id="nota1">
@@ -47,77 +47,77 @@
 
         </div>
         <div class="questao">
-            <h1>Questã 02:<span> Senha Fixa <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1114"
+            <h1>Questão 02:<span> Senha Fixa <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1114"
                         target="_blank">detalhar</a></span></h1>
             <div class="centro">
-            <p id="">Resultado: xxxxx</p>
+            <p id="">Resultado: <span id="resultado2" class="result">xxxxx<span></p>
             <label for="">Digite a senha:</label>
-            <input type="password" id="">
-            <input type="button" id="button" value="Calcular">
+            <input type="password" id="senha">
+            <input type="button" onclick="executarSenha()" id="button" value="Calcular">
             </div>
 
         </div>
         <div class="questao">
-            <h1>Questã 03:<span> Intervalo [0,25], [25,50], [50,75], [75,100] <a
+            <h1>Questão 03:<span> Intervalo [0,25], [25,50], [50,75], [75,100] <a
                         href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1037"
                         target="_blank">detalhar</a></span></h1>
             <div class="centro">
-            <p id="">Resultado: O valor digita esta no intervalo [xx,xx].</p>
+            <p id="resultado3" class="result">Resultado: O valor digita esta no intervalo [xx,xx].</p>
             <label for="">Valor:</label>
-            <input type="text" id="">
-            <input type="button" id="button" value="Calcular">
+            <input type="text" id="valorDigitado">
+            <input type="button"  onclick="executarFunc3()" id="button" value="Calcular">
             </div>
         </div>
         <div class="questao">
-            <h1>Questã 04:<span> Aumento de Salário <a
+            <h1>Questão 04:<span> Aumento de Salário <a
                         href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1048"
                         target="_blank">detalhar</a></span></h1>
              <div class="centro">
-            <p id="">Resultado: Novo salario: xx.xx, Ganho: xx.xx, Percentual: xx%</p>
+            <p id="resultado4" class="result">Resultado: Novo salario: xx.xx, Ganho: xx.xx, Percentual: xx%</p>
             <label for="">Salário atual:</label>
-            <input type="text" id="">
-            <input type="button" id="button" value="Calcular">
+            <input type="text" id="salarioAtual">
+            <input type="button" onclick="executarFunc4()" id="button" value="Calcular">
             </div>
 
         </div>
         <div class="questao">
-            <h1>Questã 05:<span> Imposto de Renda <a
+            <h1>Questão 05:<span> Imposto de Renda <a
                         href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1051"
                         target="_blank">detalhar</a></span></h1>
            
             <div class="centro">
-         <p id="">Resultado:Imposto xxxxx</p>
+         <p id="resultado5" class="result">Resultado:Imposto xxxxx</p>
             <label for="">Renda:</label>
-            <input type="text" id="">
-            <input type="button" id="button" value="Calcular">
+            <input type="text" id="renda">
+            <input type="button" onclick="executarFunc5()" id="button" value="Calcular">
             </div>
 
         </div>
         <div class="questao">
-            <h1>Questã 06:<span> Calcular o salário de um funcionário <a
+            <h1>Questão 06:<span> Calcular o salário de um funcionário <a
                         href="https://www.urionlinejudge.com.br/repository/UOJ_1008.html" target="_blank">detalhar</a></span></h1>
                 <div class="centro"> 
-            <p id="">Resultado: O funcionario xxxxxx vai receber xxx.</p>
+            <p id="resultado6" class="result">Resultado: O funcionario xxxxxx vai receber xxx.</p>
             <label for="">Nome Funcionário</label>
-            <input type="text" id="">
+            <input type="text" id="nome">
             <label for="">Valor Hora</label>
-            <input type="text" id="">
+            <input type="text" id="valorHora">
             <label for="">Total de Horas Trabalhado</label>
-            <input type="text" id="">
-            <input type="button" id="button" value="Calcular">
+            <input type="text" id="horasTrabalhadas">
+            <input type="button" onclick="executarFunc6()" id="button" value="Calcular">
             </div>
 
         </div>
         <div class="questao">
-            <h1>Questã 07:<span> Calcular o consumo médio de um automóvel <a
+            <h1>Questão 07:<span> Calcular o consumo médio de um automóvel <a
                         href="https://www.urionlinejudge.com.br/repository/UOJ_1014.html" target="_blank">detalhar</a></span></h1>
             <div class="centro">
-        <p id="">Resultado: O automóvel fez o consumo médio de xxx.</p>
+        <p id="resultado7">Resultado: O automóvel fez o consumo médio de xxx.</p>
             <label for="">Distância percorrida</label>
-            <input type="text" id="">
+            <input type="text" id="distancia">
             <label for="">Combustível gasto</label>
-            <input type="text" id="">
-            <input type="button" id="button" value="Calcular">
+            <input type="text" id="combustivel">
+            <input type="button"  onclick="executarFunc7()" id="button" value="Calcular">
             </div>
 
         </div>

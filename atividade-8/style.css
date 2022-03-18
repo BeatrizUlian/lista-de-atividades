@@ -103,7 +103,7 @@ input:hover{
     background-color: #d6eedc;
     border: none;
 }
-#resultado {
+.result {
     color: #816d39;
     background-color: white;
     font-size: 18px;
