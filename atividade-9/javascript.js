@@ -74,12 +74,12 @@ function executarFunc4(){
 //QUESTAO 5
 let listaMulher = [``];
 let listaHomem = [``];
+let sexoM = document.getElementById('sexo').value = "M";
+let sexoF = document.getElementById('sexo').value = "F";
 
 function executarFunc5Soma(){
     let nome = document.getElementById('nome').value;
-    let sexoM = document.getElementById('sexo').value = "M";
-    let sexoF = document.getElementById('sexo').value = "F";
-
+   
     if (nome == "") {
         alert ("Necessário preencher com algum caractere.");
     } else {
