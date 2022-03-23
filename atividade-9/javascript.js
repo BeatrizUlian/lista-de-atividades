@@ -72,60 +72,49 @@ function executarFunc4(){
 
 
 //QUESTAO 5
-function executarFunc5(){
-    let renda = document.getElementById('renda').value;
-    let imposto =  0; 
-    let resultado = "";
-    
-  
+let listaMulher = [``];
+let listaHomem = [``];
 
-    if( renda <=2000){
-        resultado = "isento";
-    } 
-    if(renda > 2000 && renda <=3000){
-        imposto = renda - 2000;
-        imposto = imposto * 0.08;
-        resultado = `R$ ${imposto}`;
-    } 
-    if(renda > 3000 && renda <=4500){
-        imposto = renda - 3000;
-        imposto = (imposto * 0.18) + 80;
-        resultado = `R$ ${imposto}`;
-    } 
-    if(renda > 4500){
-        imposto = renda - 4500;
-        imposto = (imposto * 0.28) + 350;
-        resultado = `R$ ${imposto}`;
-    } 
-
-    document.getElementById('resultado5').innerHTML =  `Resultado: ${resultado} `;
-
-
-}
-
-//QUESTAO 6
-function executarFunc6(){
+function executarFunc5Soma(){
     let nome = document.getElementById('nome').value;
-    let valorHora = document.getElementById('valorHora').value;
-    let horasTrabalhadas = document.getElementById('horasTrabalhadas').value;
-    let pagamento = valorHora * horasTrabalhadas;
-    
+    let sexoM = document.getElementById('sexo').value = "M";
+    let sexoF = document.getElementById('sexo').value = "F";
 
+    if (nome == "") {
+        alert ("Necessário preencher com algum caractere.");
+    } else {
+        alert ("Nome adicionado!");
+    }
+    if ( sexoF = true){
+        listaMulher.push(nome);
+    }
+    if (sexoM = true){
+        listaHomem.push(nome);
+    }
+   
+    document.getElementById('nome').value= ``;
+ 
+    }
 
-    document.getElementById('resultado6').innerHTML =  `Resultado: O funcionario ${nome} vai receber R$ ${pagamento} `;
-
-
+function executarFunc5Limpa(){
+    if ( sexoF = true ) {
+        listaMulher.splice(0, listaMulher.length);
+        
+        document.getElementById('resultado5').innerHTML= `Lista de mulheres apagada`;
+    }
+    if (sexoM = true) {
+        listaHomem.splice(0, listaHomem.length);
+        document.getElementById('resultado5').innerHTML= `Lista de homens apagada`;
+    } 
 }
 
-//QUESTAO 7
-function executarFunc7(){
-    let distancia = document.getElementById('distancia').value;
-    let combustivel = document.getElementById('combustivel').value;
-    let consumo = distancia / combustivel;
+function executarFunc5Aparece(){
+    if (sexoF = true) {
+        document.getElementById('resultado5').innerHTML = `Resultado: A lista de mulheres é [${listaMulher}]`;
+    } 
     
-
-
-    document.getElementById('resultado7').innerHTML =  `Resultado: O automóvel fez o consumo médio de ${consumo}. `;
-
-
-} 
+    if (sexoM = true){
+        document.getElementById('resultado5').innerHTML = `Resultado: A lista de homens é [${listaHomem}]`;
+    }
+   
+}
