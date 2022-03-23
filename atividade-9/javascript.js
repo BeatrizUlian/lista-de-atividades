@@ -93,7 +93,7 @@ function executarFunc5Soma(){
     }
    
     document.getElementById('nome').value= ``;
- 
+    lacoFor();
     }
 
 function executarFunc5Limpa(){
