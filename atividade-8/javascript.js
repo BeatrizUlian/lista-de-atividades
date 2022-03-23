@@ -98,6 +98,8 @@ function executarFunc4(){
 
 }
 
+//entendo a logica mas nao sei como escrever, fiz uma funcao fora da funcao principal para fazezr a conta do ganho
+
 //QUESTAO 5
 function executarFunc5(){
     let renda = document.getElementById('renda').value;
