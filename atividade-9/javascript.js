@@ -72,49 +72,58 @@ function executarFunc4(){
 
 
 //QUESTAO 5
-let listaMulher = [``];
-let listaHomem = [``];
-let sexoM = document.getElementById('sexo').value = "M";
-let sexoF = document.getElementById('sexo').value = "F";
+
+let listaMulher = [];
+let listaHomem = [];
 
 function executarFunc5Soma(){
     let nome = document.getElementById('nome').value;
-   
+    let sexo = document.getElementById('sexo').value;
+    
     if (nome == "") {
         alert ("Necessário preencher com algum caractere.");
     } else {
-        alert ("Nome adicionado!");
+     
     }
-    if ( sexoF = true){
+
+    if ( sexo == "F" && nome != ""){
         listaMulher.push(nome);
-    }
-    if (sexoM = true){
+        alert ("Nome de mulher adicionado!");
+    } else if (sexo == "M" && nome != ""){
         listaHomem.push(nome);
+        alert ("Nome de homem adicionado!");
+    } else {
+
     }
    
     document.getElementById('nome').value= ``;
-    lacoFor();
+    }
+
+
+function executarFunc5Aparece(){
+    let sexo = document.getElementById('sexo').value;
+    
+        if (sexo == 'F' ) {
+            document.getElementById('resultado5').innerHTML = `Resultado: A lista de mulheres é [${listaMulher}]`;
+        } else if (sexo == "M"){
+            document.getElementById('resultado5').innerHTML = `Resultado: A lista de homens é [${listaHomem}]`;
+        } else {
+    
+        }
+       
     }
 
 function executarFunc5Limpa(){
-    if ( sexoF = true ) {
-        listaMulher.splice(0, listaMulher.length);
-        
-        document.getElementById('resultado5').innerHTML= `Lista de mulheres apagada`;
-    }
-    if (sexoM = true) {
+    let sexo = document.getElementById('sexo').value;
+    
+    if (sexo == "M") {
         listaHomem.splice(0, listaHomem.length);
-        document.getElementById('resultado5').innerHTML= `Lista de homens apagada`;
-    } 
+        document.getElementById('resultado5').innerHTML= `Lista de homens apagada`; 
+    } else if (  sexo == "F" ){
+        listaMulher.splice(0, listaMulher.length);
+        document.getElementById('resultado5').innerHTML= `Lista de mulheres apagada`;
+    } else {
+
+    }
 }
 
-function executarFunc5Aparece(){
-    if (sexoF = true) {
-        document.getElementById('resultado5').innerHTML = `Resultado: A lista de mulheres é [${listaMulher}]`;
-    } 
-    
-    if (sexoM = true){
-        document.getElementById('resultado5').innerHTML = `Resultado: A lista de homens é [${listaHomem}]`;
-    }
-   
-}
