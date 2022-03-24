@@ -28,7 +28,7 @@ document.getElementById('resultado2').innerHTML = `Os números entre ${n1} e ${n
 
 
 //QUESTAO 3
-let lista = [``];
+let lista = [];
 function executarFunc3Soma(){
     let item = document.getElementById('item').value;
     if (item == "") {
@@ -39,6 +39,7 @@ function executarFunc3Soma(){
     document.getElementById('item').value= ``;
     lacoFor();
     }
+ 
 }
 
 function executarFunc3Limpa(){
@@ -54,18 +55,21 @@ function executarFunc3Aparece(){
 
 
 //QUESTAO 4
-let numbers = [""];
+
 
 function executarFunc4(){
-  
-    for (var i = 0; i < 6; i++){
-  let sorteio = (Math.random() * 60) + 1;
-  numbers.push(sorteio);
-  document.getElementById('resultado4').innerHTML =  Math.trunc(sorteio);
- 
+   let n = 0;
+    let i = 1;
+    let numbers = [];
+  while(i <=6) {
+    n = Math.trunc((Math.random() * 59) + 1);
+    numbers.push(n);
+    i++;
+
 }
+
+document.getElementById('resultado4').innerHTML =  `Resultado ${numbers}`;
 }
-// nao consegui sortear 6 numeros
 
 
 
@@ -97,6 +101,8 @@ function executarFunc5Soma(){
     }
    
     document.getElementById('nome').value= ``;
+   
+
     }
 
 
