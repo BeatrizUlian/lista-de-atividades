@@ -13,15 +13,14 @@ function executarFunc1(){
 
 //QUESTAO 2
 
-function executarFunc2(func){
-    
-let n1 = document.getElementById('n1').value;
-let n2 = document.getElementById('n2').value;
-var resultado2 = '';
-for (var resultado2 = Math.min(n1, n2); n1 >= 0 && n2 >= 0 && resultado2 <= Math.max(n1, n2); resultado2++)
+function executarFunc2(){
+    let n1 = +document.getElementById('n1').value;
+    let n2 = document.getElementById('n2').value;
+    var resultado2 = '';
+    for (let i =( n1 + 1); i < Number(n2); i++){
+        resultado2 += `,${i}`;
+    }
 document.getElementById('resultado2').innerHTML = `Os números entre ${n1} e ${n2} são ${resultado2}.`;
-
-
 
 }
 
@@ -51,6 +50,7 @@ function executarFunc3Aparece(){
     document.getElementById('resultado3').innerHTML = `Resultado: A lista de itens é [${lista}]`;
 }
 
+    
     
 
 
