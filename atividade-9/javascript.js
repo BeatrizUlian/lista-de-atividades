@@ -1,16 +1,17 @@
 // QUESTÃO 1
 function executarFunc1(){
-    var num = parseInt(document.getElementById("numeroTabuada").value);
-    var resultado1 = document.getElementById('resultado1');
-    var tabuada='';
-  
-    for(var count=1; count<=10 ; count++)
-     tabuada += num+" x "+count+" = "+
-                 num*count+"<br />";
+let resultado = "Resultado: <br>";
+let i = 1;
+let n = document.getElementById("numeroTabuada").value;
+    do {
+        resultado += `${n} x ${i} = ${n*i}<br>`;
+        i++;
+    } while(i <= 10 );
     
-    resultado1.innerHTML = tabuada;
-  }
+     document.getElementById('resultado1') = resultado;
+}
 
+    
 //QUESTAO 2
 
 function executarFunc2(){
@@ -92,10 +93,10 @@ function executarFunc5Soma(){
 
     if ( sexo == "F" && nome != ""){
         listaMulher.push(nome);
-        alert ("Nome de mulher adicionado!");
+        alert ("Nome feminino adicionado!");
     } else if (sexo == "M" && nome != ""){
         listaHomem.push(nome);
-        alert ("Nome de homem adicionado!");
+        alert ("Nome masculino adicionado!");
     } else {
 
     }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Nunito&family=Open+Sans&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    
+    <div id="main">
+        <div class="questao">
+            <h1>
+                Questão Lanche
+            </h1>
+            <p> Com base na tabela abaixo, escreva um programa que leia o código de um item e a quantidade deste item. A seguir, calcule e mostre o valor da conta a pagar.
+<br>
+                <img src="https://resources.beecrowd.com.br/gallery/images/problems/UOJ_1038_pt.png"><br>
+
+                <b>Entrada</b><br>
+                O arquivo de entrada contém dois valores inteiros correspondentes ao código e à quantidade de um item conforme tabela acima.
+                <br><br>
+                <b>Saída</b><br>
+                O arquivo de saída deve conter a mensagem "Total: R$ " seguido pelo valor a ser pago, com 2 casas após o ponto decimal.
+            </p> <div class="centro">
+            <label>Insira o Código</label>
+            <input type="number" id="codigo"/>
+            <label>Insira a Quantidade</label>
+            <input type="number" id="quantidade"/>
+            <input type="button"  onclick="executarFunc1()" id="button"value="Calcular" />
+            <b><p id="resultado1">Resultado:</p></b>
+            </div>
+        </div>
+        
+
+
+
+
+        <div class="questao">
+            <h1>
+                Questão Formulário
+            </h1>
+            <p> Preencher formulários é uma tarefa simples. Mas é preciso conferir se o espaço reservado para os dados é suficiente.
+                <br>
+                Sua tarefa é, dada uma linha de texto, indicar se ele cabe ou não cabe em um formulário com 80 caracteres.
+                <br>
+                <b>Entrada</b>
+                A entrada é uma linha de texto L (1 ≤ |L| ≤ 500).
+                <br><br>
+                <b>Saída</b>
+                A saída é dada em uma única linha. Ela deve ser "YES" (sem as aspas) se a linha de texto L tem até 80 caracteres. Se L tem mais de 80 caracteres, a saída deve ser "NO".
+            </p> <div class="centro">
+            <label>Insira o texto:</label>
+            <input type="text" id="texto"/>
+        
+            <input type="button"  onclick="executarFunc2()" id="button"value="Resultado" />
+            <b><p id="resultado2">Resultado:</p></b>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
+
+
