@@ -1,0 +1,188 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  background: #fffbf0;
+  color: #222;
+
+}
+#main {
+    width: 600px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+  
+input {
+    display: block;
+    text-align: center;
+}
+
+
+span {
+    font-size: 16px;
+    font-family: "IBM Plex Mono", monospace;
+    color: #20592f;
+}
+
+p {
+    margin: 0px;
+}
+body {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+ .questao {
+    background-color: white;
+    padding: 0px 0px 10px 10px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+label{
+    font-family: monospace;
+    color: #222;
+    font-size: 16px;
+    margin: 10px;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+}
+input {
+    border-bottom: 1px solid #20592f;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    background-color: #f3e8ca;
+    margin-top:10px;
+    margin: auto;
+}
+.questao p {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.questao label{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.centro{
+    margin:auto;
+    text-align: center;
+
+}
+input:hover{
+    border-color: #816d39;
+}
+#button {
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 175px;
+    font-family: monospace;
+    color: #222;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #d6eedc;
+    border: none;
+}
+.result {
+    color: #816d39;
+    background-color: white;
+    font-size: 18px;
+}
+#button:hover{
+    background-color:white;
+    transition: 0.8s;
+    color: #222;
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+
+a{
+    color: #222;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: #816d39;
+    color: white;
+    transition: 0.8s;
+}
+
+
+h1 {
+    font-family: "Josefin Slab", Bitter, georgia;
+    font-size: 2rem;
+    font-weight: normal;
+  text-decoration: none;
+    color: #816d39;
+    text-align: left;
+    border-bottom: 1px solid #222;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+#main p {
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+    font-family: "IBM Plex Mono", monospace;
+}
+input {
+    color: #20592f;
+    padding: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+#texto {
+    width: 500px;
+    margin-top: 19px;
+    color: #20592f;
+    padding: 10px;
+}
+
+@media (max-width: 450px){
+    
+    h1 {
+        font-size: 1.5rem;
+        width: 100%;
+      }
+    h2{
+        width: 100%;
+    }
+      li a {   
+        font-size: 1rem;
+        
+      }
+      li a:hover {
+       
+      width: 100%;
+      
+      }
+      
+    .main {
+        width: 80%;
+        margin:auto;
+        margin-top: 30px;
+    
+    }
+    
+}
+
