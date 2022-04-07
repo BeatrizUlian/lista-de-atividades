@@ -39,7 +39,21 @@
             color:white;
             border: 1px solid black;
         }
-       
+       #trans{
+           background-color: yellow ;
+       }
+       #pre{
+           background-color: blue ;
+           color: white;
+       }
+       #cir{
+           background-color: red ;
+           color: white;
+       }
+       #rec{
+           background-color: green;
+           color:white;
+       }
      
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -67,10 +81,10 @@
                 </div>
                 <div class="col-sm-3">
                     <select class="form-control" id="status">
-                        <option>Pré-Operatório</option>
-                        <option>Transferido</option>
-                        <option>Em cirurgia</option>
-                        <option>Em recuperação</option>
+                        <option id="pre">Pré-Operatório</option>
+                        <option id="trans">Transferido</option>
+                        <option id="cir">Em cirurgia</option>
+                        <option id="rec">Em recuperação</option>
                       </select>
                 </div>
                 <div class="col-sm-3">
@@ -82,8 +96,8 @@
             <div class="form-group">
                 <label class="control-label col-sm-3" for="hrInicio">Hora Início:</label>
                 <label class="control-label col-sm-3" for="inicioPrevisto">Início Previsto:</label>
-                <label class="control-label col-sm-3" for="fimPrevisto">Fim Previsto:</label>
-                <label class="control-label col-sm-3" for="saidaPrevista">Saída Prevista:</label>
+                <label class="control-label col-sm-3"  for="fimPrevisto">Fim Previsto:</label>
+                <label class="control-label col-sm-3"  for="saidaPrevista">Saída Prevista:</label>
                 <div class="col-sm-3">
                 <input type="time" class="form-control" id="hrInicio">
                 </div>

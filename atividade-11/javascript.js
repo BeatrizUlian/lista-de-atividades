@@ -33,7 +33,9 @@ function carregaPg(){
         txtTabela += `<tr onclick="editar(${i})"><td>${pacientes[i].nome}</td><td> ${pacientes[i].status}</td> 
         <td> ${pacientes[i].local}</td> <td> ${pacientes[i].hrInicio}</td> <td> ${pacientes[i].inicioPrevisto}</td> 
         <td> ${pacientes[i].fimPrevisto}</td> <td> ${pacientes[i].saidaPrevista}</td>`;
+        i++;
     }
+
     document.getElementById('tbCorpo').innerHTML = txtTabela; 
 }
 
