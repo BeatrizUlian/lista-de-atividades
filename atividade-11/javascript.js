@@ -30,7 +30,9 @@ if(localStorage.getItem('pacientes') != null){
 function carregaPg(){
     let txtTabela = '';
     for (i  in pacientes){
-        txtTabela += `<tr onclick="editar(${i})"><td>${pacientes[i].nome}</td>`;
+        txtTabela += `<tr onclick="editar(${i})"><td>${pacientes[i].nome}</td><td> ${pacientes[i].status}</td> 
+        <td> ${pacientes[i].local}</td> <td> ${pacientes[i].hrInicio}</td> <td> ${pacientes[i].inicioPrevisto}</td> 
+        <td> ${pacientes[i].fimPrevisto}</td> <td> ${pacientes[i].saidaPrevista}</td>`;
     }
     document.getElementById('tbCorpo').innerHTML = txtTabela; 
 }
@@ -39,6 +41,12 @@ function carregaPg(){
 function gravar(){
     let paciente = {};
     paciente.nome = document.getElementById('nome').value;
+    paciente.status = document.getElementById('status').value;
+    paciente.local = document.getElementById('local').value;
+    paciente.hrInicio = document.getElementById('hrInicio').value;
+    paciente.inicioPrevisto = document.getElementById('inicioPrevisto').value;
+    paciente.fimPrevisto = document.getElementById('fimPrevisto').value;
+    paciente.saidaPrevista = document.getElementById('saidaPrevista').value;
     let i =  document.getElementById("id").value;
     if(i == ""){
     pacientes.push(paciente);
