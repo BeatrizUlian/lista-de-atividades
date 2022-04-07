@@ -5,6 +5,12 @@ let alunos = [
  {nome:"William", dt_nascimento:"1986-06-25"}, {nome:"Jonas", dt_nascimento:"1996-02-15"}, {nome:"Paula", dt_nascimento:"2005-06-03"},
 {nome:"Henrique", dt_nascimento:"2006-08-06"}, {nome:"Leticia", dt_nascimento:"1999-09-14"}
 ];
+if(localStorage.getItem('alunos') == null){
+    localStorage.setItem('alunos', JSON.stringify(alunos));
+} else{
+    alunos = JSON.parse(localStorage.getItem('alunos'));
+}
+
 
 let qtPagina = Math.ceil(alunos.length/5);
 let pg = 0;
@@ -31,11 +37,25 @@ function carregaPagina (n){
 
 }
 
+function idade(dtNascimento){
+    let dtAtual = new Date();
+    let anoAtual = dtAtual.getFullYear();
+    let anoNascimento = dtNascimento.substr(0,4);
+    let idade = anoAtual - anoNascimento;
+    let mes = dtAtual.getMonth()+1;
+    mes = mes.toString().padStart(2,0);
+    let dia = dtAtual.getDate();
+    dia = dia.toString().padStart(2,0);
+    idade += (`${mes}-${dia} `<` ${dtNascimento.substr(5,5)}`)? -1:0;
+    return idade;
+}
 
 function editar(i){
     document.getElementById("nome").value = alunos[i].nome;
     document.getElementById("dt-nascimento").value = alunos[i].dt_nascimento;
     document.getElementById("id").value = i;
+    document.getElementById("idade").value = idade(alunos[i].dt_nascimento);
+    localStorage.setItem('alunos', JSON.stringify(alunos));
 }
 
 function gravar(){
@@ -46,6 +66,7 @@ function gravar(){
    document.getElementById("nome").value = "";
    document.getElementById("dt-nascimento").value = "";
    document.getElementById("id").value = "";
+   document.getElementById("idade").value = "";
 }
 let listaPagina = "";
  i = 1;
