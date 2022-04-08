@@ -27,11 +27,29 @@ if(localStorage.getItem('pacientes') != null){
     pacientes = JSON.parse(localStorage.getItem('pacientes'));
 }
 
+let cor = {
+    "pre": "warning",
+    "trans" : "info",
+    "cir": "danger",
+    "rec": "success",
+}
+
 function carregaPg(){
     let txtTabela = '';
     for (i  in pacientes){
-        txtTabela += `<tr onclick="editar(${i})"><td>${pacientes[i].nome}</td><td> ${pacientes[i].status}</td> 
-        <td> ${pacientes[i].local}</td> <td> ${pacientes[i].hrInicio}</td> <td> ${pacientes[i].inicioPrevisto}</td> 
+        let status = pacientes[i].status;
+        let local = pacientes[i].local;
+        let statusLocal = status;
+        if (local != ''){
+            status = `${status} (${local})`;
+        }
+
+        
+
+        // let status = pacientes[i].status; += (pacientes[i].local != '')? ` (${pacientes[i].local})` : '';
+
+        txtTabela += `<tr onclick="editar(${i})"><td>${pacientes[i].nome}</td><td class="${cor}"> ${status}</td> 
+       <td> ${pacientes[i].hrInicio}</td> <td> ${pacientes[i].inicioPrevisto}</td> 
         <td> ${pacientes[i].fimPrevisto}</td> <td> ${pacientes[i].saidaPrevista}</td>`;
         i++;
     }
@@ -43,6 +61,9 @@ function carregaPg(){
 function gravar(){
     let paciente = {};
     paciente.nome = document.getElementById('nome').value;
+    if (paciente.nome.length < 3){
+        alert('Nome vazio.'); return;
+    } 
     paciente.status = document.getElementById('status').value;
     paciente.local = document.getElementById('local').value;
     paciente.hrInicio = document.getElementById('hrInicio').value;
@@ -88,6 +109,9 @@ function novo(){
 
 function apagar(){
     let i = document.getElementById('id').value;
+    if (i == ""){
+        alert('Selecione algum paciente');
+    }
     pacientes.splice(i,1);
     localStorage.setItem('pacientes', JSON.stringify(pacientes));
    carregaPg();
