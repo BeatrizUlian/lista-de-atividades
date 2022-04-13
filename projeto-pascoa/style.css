@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;  
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  html,body{
+    margin: 0;
+    font-family: "Playfair Display";
+    height:100%;
+  
+  }
+
+  .header {
+max-width: 100%;
+     background-position:center center;
+    display:flex;
+    flex-direction:column;
+
+  }
+
+  h1{
+      font-family: "Playfair Display";
+      color: #1A1914;
+      font-size: 82px;
+      text-align: center;
+      margin-bottom: 0px;
+      margin-top:40px;
+  }
+
+  #subtitulo{
+      font-family: "Josefin Slab";
+      color: #996851;
+      font-size: 72px;
+      text-align:right;
+      margin-right: 220px;
+      margin-top: 0px;
+
+
+  }
+
+  h2{
+      font-family: "Playfair Display";
+      color: #1A1914;
+      font-size: 72px;
+  }
+
+  h3{
+      font-family: "Josefin Slab";
+      font-size: 42px;
+      color: #1A1914;
+      text-align: center;
+      margin-bottom: 0px;
+  }
+  .sabores{
+      display: grid;
+      grid-template-columns: 70px 1fr 1fr 1fr 70px;
+      border: 1px solid red;
+  }
+  .titulo{
+      grid-column: 2/6;
+      border: 1px solid green;
+      padding: 0px;
+      margin: 0px;
+  }
+  .sabores2{
+      grid-column: 2/5;
+      border: 1px solid blue;
+      text-align: center;
+  }
+ 
+  .sabores2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+  .sabores2 ul li{
+    margin-bottom: 50px;
+  }
+
+  .sabores2 img{
+      border: 2px solid #1A1914;
+      border-radius: 5px;
+  }
+  
+  .sabores2 span{
+      color: #1A1914;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 4px;
+     
+      
+  }
+  input{
+      width: 50px;
+      border: 2px solid #1A1914;
+      border-radius: 5px;
+  }

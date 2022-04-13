@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Nunito&family=Open+Sans&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+   <button onclick="execAjax()" class="w3-button">Exemplo modal</button>
+        <div class="w3-modal" id="modal-1">
+            <div class="w3-modal-content">
+                <header class="w3-container w3-teal">
+                   <span onclick="document.getElementById('modal-1').style.display='none'" class="w3-button w3-display-topright">&times;</span> 
+                   <h2>Cabeçalho da modal</h2>
+
+                </header>
+                <div class="container" id="corpo-modal">
+                    <p>Conteúdo</p>
+                    <p id="lsRegiao"></p>
+                </div>
+                <footer class="w3-container w3-teal">
+                    roda pé
+                </footer>
+            </div>
+        </div>
+
+</body>
+<script src="javascript.js"></script>
+</html>
+
