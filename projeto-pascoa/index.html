@@ -31,13 +31,29 @@
     <h2>Sabores</h2>
     </div>
     <div class="sabores2">
-    <ul>
-        <li>
+        <div class="produtos lista">
+            <div class="ovos">
+            <img src="imgs/brigadeeiro.png">
+            <h3 class="titulosabores">Brigadeiro</h3>
+            <p class="descricao"> Descricao</p>
+            <p class="valor">R$ 100</p>
+            <span class="bt">-</span> <input type="number" id="quantidade"></input> <span class="bt">+</span>
+            </div>
+        
+        </div>
+
+
+
+
+    <!-- <ul>
+        <li class="produtos lista">
         <img src="imgs/brigadeeiro.png">
-        <h3>Brigadeiro</h3>
-        <span>-</span> <input type="number" id="quantidade"></input> <span>+</span>
-    </li>
-        <li>
+        <h3 class="titulosabores">Brigadeiro</h3>
+        <p class="descricao">Descricao</p>
+        <p class="valor">R$ 100</p>
+        <span class="bt">-</span> <input type="number" id="quantidade"></input> <span class="bt">+</span>
+    </li> -->
+        <!-- <li>
             <img src="imgs/leiteninho.png">
             <h3>Leite Ninho</h3>
             <span>-</span> <input type="number" id="quantidade"></input> <span>+</span></li>
@@ -53,8 +69,8 @@
             <span>-</span> <input type="number" id="quantidade"></input> <span>+</span></li>
         <li><img src="imgs/maracuja.png">
             <h3>Maracujá</h3>
-            <span>-</span> <input type="number" id="quantidade"></input> <span>+</span></li>
-    </ul>
+            <span>-</span> <input type="number" id="quantidade"></input> <span>+</span></li> -->
+    <!-- </ul> -->
     </div>
 
 </section>
@@ -81,6 +97,24 @@
     </div>
 </section>
 </body>
-<script src="javascript.js"></script>
+<script>
+    lista = [];
+    function buscarListaProduto(){
+        let ajax = new XMLHttpRequest();
+        ajax.open("GET", "produtos.json");
+        ajax.send();
+        ajax.onload = function (){
+            lista = JSON.parse(this.response);
+            replicar();
+        }
+    }
+    
+    function replicar (){
+        let produto = document.querySelector(".produtos").clodeNode(true);
+        produto.querySelector(".titulosabores").innerHTML= "novo titulo";
+        document.querySelector(".lista").append(produto);
+    }
+    buscarListaProduto();
+    </script>
 </html>
 

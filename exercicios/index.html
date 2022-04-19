@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Nunito&family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<ul>
+    <li class="ativo"> 
+        Oi
+    </li>
+    <li>Tudo</li>
+    <li>bem</li>
+</ul>
+</body>
+<script>
+ function Pessoa (nomeAtribuido, idadeAtribuida){
+     this.nome = nomeAtribuido;
+     this.idade = idadeAtribuida;
+     this.andar = function (){
+         console.log(this.nome + ' andou');
+     }
+ }
+
+ const joao = new Pessoa('Joao', 20);
+ const maria = new Pessoa('Maria', 25);
+ const bruno = new Pessoa('Bruno', 15);
+
+ function Dom (seletor){
+     const elementList = document.querySelectorAll(seletor);
+     this.elements = elementList;
+     this.ativar = function(classe){
+         elementList.forEach((element) => {
+             element.classList.add(classe);
+         })
+     }
+     this.remover = function (classe){
+         elementList.forEach((element) => {
+             element.classList.remove(classe);
+     })
+ }
+}
+
+ const li = new Dom('li');
+ li.addClass('ativar');
+
+
+     </script>
+</html>
+

@@ -1,0 +1,44 @@
+[
+    {
+        "nome":"Brigadeiro",
+        "descricao": "Ovo de páscoa trufado com brigadeiro caseiro.",
+        "valor": 100,
+        "quantidade": 0,
+        "img": "imgs/brigadeeiro.png"
+    },
+    {
+        "nome":"Leite Ninho",
+        "descricao": "Ovo de páscoa caseiro de leite ninho com nutella.",
+        "valor": 110,
+        "quantidade": 0,
+        "img": "imgs/leiteninho.png"
+    },
+    {
+        "nome":"Morango",
+        "descricao": "Ovo de páscoa clássico de Morango com chocolate amargo.",
+        "valor": 100,
+        "quantidade": 0,
+        "img": "imgs/morango.png"
+    },
+    {
+        "nome":"Paçoca",
+        "descricao": "",
+        "valor": 100,
+        "quantidade": 0,
+        "img": "imgs/pacoca.png"
+    },
+    {
+        "nome":"Oreo",
+        "descricao": "",
+        "valor": 100,
+        "quantidade": 0,
+        "img": "imgs/oreo.png"
+    },
+    {
+        "nome":"Maracujá",
+        "descricao": "",
+        "valor": 100,
+        "quantidade": 0,
+        "img": "imgs/maracuja.png"
+    }
+]
