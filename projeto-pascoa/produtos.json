@@ -22,21 +22,21 @@
     },
     {
         "nome":"Paçoca",
-        "descricao": "",
-        "valor": 100,
+        "descricao": "Ovo de páscoa de paçoca com doce de leite.",
+        "valor": 140,
         "quantidade": 0,
         "img": "imgs/pacoca.png"
     },
     {
         "nome":"Oreo",
-        "descricao": "",
+        "descricao": "Ovo de páscoa de Oreo com raspas de chocolate amargo.",
         "valor": 100,
         "quantidade": 0,
         "img": "imgs/oreo.png"
     },
     {
         "nome":"Maracujá",
-        "descricao": "",
+        "descricao": "Ovo de páscoa de maracujá com chocolate ao leite.",
         "valor": 100,
         "quantidade": 0,
         "img": "imgs/maracuja.png"

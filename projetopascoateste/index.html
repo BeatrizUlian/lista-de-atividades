@@ -103,7 +103,7 @@
         lista = [];
         function buscarListaProduto() {
             let ajax = new XMLHttpRequest();
-            ajax.open("GET", "produtos.json");
+            ajax.open("GET", "https://beatrizulian.github.io/lista-de-atividades/projeto-pascoa/produtos.json");
             ajax.send();
             ajax.onload = function () {
                 lista = JSON.parse(this.response);
