@@ -99,10 +99,12 @@ max-width: 100%;
      
       
   }
-  #quantidade{
-      width: 50px;
+  .quantidade{
+      width: 100px;
+      padding: 10px;
       border: 2px solid #1A1914;
       border-radius: 5px;
+      font-size: 12px;
   }
 
   .encomendas{
@@ -181,5 +183,6 @@ span{
 
 .valor{
  font-weight: bold;
- font-size: 16px;
+ font-size: 24px;
+ color: #996851;
 }
