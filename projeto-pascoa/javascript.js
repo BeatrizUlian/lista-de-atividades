@@ -20,7 +20,7 @@ let i = 0;
             produto.querySelector('.descricao').innerHTML = p.descricao;
             produto.querySelector('.valor').innerHTML = p.valor;
             produto.querySelector('.quantidade').innerHTML = p.quantidade;
-            produto.querySelector('img').innerHTML = p.img;
+            produto.querySelector('img').src= `https://beatrizulian.github.io/lista-de-atividades/projeto-pascoa/${p.img}`;
          
             produto.querySelector(".menos").addEventListener("click", function () { alterarQt(id, -1) });
             produto.querySelector(".mais").addEventListener("click", function () { alterarQt(id, 1) });
@@ -39,9 +39,47 @@ let i = 0;
     }
     buscarListaProduto();
 
+    let msgModal = "";
+function mostrarPedido(){
+   
+    let subTotal = 0;
+    let total = 0;
+    let nome = document.getElementById("nome").value;
+    let endereco = document.getElementById("endereco").value;
+    
+    for (const produto of lista){
+        if(produto.quantidade > 0){
+            subTotal = (produto.valor * produto.quantidade);
+            total += subTotal;
+                  
+           msgModal += `<p>${produto.nome} (R$ ${produto.valor} x ${produto.quantidade}) = <b>R$${subTotal}</b> </p>`;
+        
+        }
+    }
 
+    
+    if(msgModal == ""){
+        msgModal ="<p>Nenhum produto selecionado.</p>";
+        document.querySelector("#btEnviar").disabled = "disabled";
+    }else {
+        msgModal += `<b>Nome</b>: ${nome}<br>
+        <b>Endereço para entrega</b>: ${endereco}<br><br>
+        <b>Total</b>: R$${total}<br>`;
+        document.querySelector("#btEnviar").disabled = "";
+    }
+    document.querySelector(".modal-body").innerHTML = msgModal;
 
+    
+}
 
+function enviar(){
+    let fone = '5561999011995';
+    msgModal = msgModal.replaceAll("<b>","*").replaceAll("</b>", "*");
+    msgModal = msgModal.replaceAll("<p>", "").replaceAll("</p>", "\n");
+    msgModal = encodeURI(msgModal);
+    link = `https://api.whatsapp.com/send?phone=${fone}&text=${msgModal}`
+    window.open(link,'_blanck')
+}
     // }
     // function replicar() {
     //     let i = 0;
