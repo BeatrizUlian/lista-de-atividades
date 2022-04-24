@@ -76,6 +76,10 @@ function enviar(){
     let fone = '5561999011995';
     msgModal = msgModal.replaceAll("<b>","*").replaceAll("</b>", "*");
     msgModal = msgModal.replaceAll("<p>", "").replaceAll("</p>", "\n");
+    let nome = document.getElementById("nome").value;
+    let endereco = document.getElementById("endereco").value;
+    msgModal += `Nome: *${nome}*\n`;
+    msgModal += `Endereço: *${endereco}*\n`;
     msgModal = encodeURI(msgModal);
     link = `https://api.whatsapp.com/send?phone=${fone}&text=${msgModal}`
     window.open(link,'_blanck')
