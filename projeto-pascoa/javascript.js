@@ -41,7 +41,7 @@ let i = 0;
 
     let msgModal = "";
 function mostrarPedido(){
-   
+    msgModal = "";
     let subTotal = 0;
     let total = 0;
     let nome = document.getElementById("nome").value;
