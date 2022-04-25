@@ -46,7 +46,12 @@ function mostrarPedido(){
     let total = 0;
     let nome = document.getElementById("nome").value;
     let endereco = document.getElementById("endereco").value;
-    
+    if (nome == "" ){
+        alert("Insira seu nome.");
+    } 
+    if (endereco == ""){
+        alert("Insira seu endereço para entrega.");
+    } 
     for (const produto of lista){
         if(produto.quantidade > 0){
             subTotal = (produto.valor * produto.quantidade);
@@ -68,7 +73,7 @@ function mostrarPedido(){
         document.querySelector("#btEnviar").disabled = "";
     }
     document.querySelector(".modal-body").innerHTML = msgModal;
-
+ 
     
 }
 
@@ -83,6 +88,7 @@ function enviar(){
     msgModal = encodeURI(msgModal);
     link = `https://api.whatsapp.com/send?phone=${fone}&text=${msgModal}`
     window.open(link,'_blanck')
+
 }
     // }
     // function replicar() {
